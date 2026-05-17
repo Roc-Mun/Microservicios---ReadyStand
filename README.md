@@ -8,16 +8,16 @@ Plataforma web para eventos gastronómicos. El organizador crea el evento, regis
 
 | Servicio | Encargado | Repositorio |
 |---|---|---|
-| Usuario-Service | Rocío | [usuario-service](https://github.com/Roc-Mun/usuarios-service) |
-| Evento-Service | Rocío | [evento-service](https://github.com/Roc-Mun/eventos-service) |
-| Stand-Service | Rocío | [stand-service](https://github.com/Roc-Mun/stands-service) |
-| Producto-Service | Rocío | [producto-service](https://github.com/Roc-Mun/productos-service) |
-| Pedido-Service | Misael | [pedido-service](https://github.com/MisaeLConcha/entorno-desarrollo) |
-| SubPedido-Service | Misael | [subpedido-service](https://github.com/MisaeLConcha/entorno-subpedido) |
-| Preparacion-Service | Misael | [preparacion-service](https://github.com/USUARIO/preparacion-service) |
-| Pago-Service | Bastián | [pago-service](https://github.com/MisaeLConcha/entorno-preparacion) |
-| Notificacion-Service | Bastián | [notificacion-service](https://github.com/Bastian0711/microservicio-notificacion) |
-| Inventario-Service | Bastián | [inventario-service](https://github.com/Bastian0711/microservicio-inventario) |
+| Usuario-Service | Rocío | [usuarios-service](https://github.com/Roc-Mun/usuarios-service) |
+| Evento-Service | Rocío | [eventos-service](https://github.com/Roc-Mun/eventos-service) |
+| Stand-Service | Rocío | [stands-service](https://github.com/Roc-Mun/stands-service) |
+| Producto-Service | Rocío | [productos-service](https://github.com/Roc-Mun/productos-service) |
+| Pedido-Service | Misael | [entorno-desarrollo](https://github.com/MisaeLConcha/entorno-desarrollo) |
+| SubPedido-Service | Misael | [entorno-subpedido](https://github.com/MisaeLConcha/entorno-subpedido) |
+| Preparacion-Service | Misael | [entorno-preparacion](https://github.com/MisaeLConcha/entorno-preparacion) |
+| Pago-Service | Bastián | [microservicio-pagos](https://github.com/Bastian0711/microservicio-pagos) |
+| Notificacion-Service | Bastián | [microservicio-notificacion](https://github.com/Bastian0711/microservicio-notificacion) |
+| Inventario-Service | Bastián | [microservicio-inventario](https://github.com/Bastian0711/microservicio-inventario) |
 
 ---
 
