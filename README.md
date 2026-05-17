@@ -8,10 +8,10 @@ Plataforma web para eventos gastronómicos. El organizador crea el evento, regis
 
 | Servicio | Encargado | Repositorio |
 |---|---|---|
-| Usuario-Service | Rocío | [usuario-service](https://github.com/Roc-Mun/usuario-service) |
-| Evento-Service | Rocío | [evento-service](https://github.com/Roc-Mun/evento-service) |
-| Stand-Service | Rocío | [stand-service](https://github.com/Roc-Mun/stand-service) |
-| Producto-Service | Rocío | [producto-service](https://github.com/Roc-Mun/producto-service) |
+| Usuario-Service | Rocío | [usuario-service](https://github.com/Roc-Mun/usuarios-service) |
+| Evento-Service | Rocío | [evento-service](https://github.com/Roc-Mun/eventos-service) |
+| Stand-Service | Rocío | [stand-service](https://github.com/Roc-Mun/stands-service) |
+| Producto-Service | Rocío | [producto-service](https://github.com/Roc-Mun/productos-service) |
 | Pedido-Service | Misael | [pedido-service](https://github.com/MisaeLConcha/entorno-desarrollo) |
 | SubPedido-Service | Misael | [subpedido-service](https://github.com/MisaeLConcha/entorno-subpedido) |
 | Preparacion-Service | Misael | [preparacion-service](https://github.com/USUARIO/preparacion-service) |
