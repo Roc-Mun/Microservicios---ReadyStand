@@ -1,0 +1,43 @@
+{
+  "info": {
+    "_postman_id": "aee18863-8730-4b34-908d-1027e2f8d4c7",
+    "name": "4 microservicios",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54172177"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Feria Gastronómica Uni\",\r\n  \"organizacionResponsable\": \"Uni Eventos\",\r\n  \"fechaInicio\": \"2026-06-10T10:00:00\",\r\n  \"fechaFin\": \"2026-06-12T18:00:00\",\r\n  \"ubicacion\": \"Talca\",\r\n  \"idOrganizador\": 2\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://34.231.120.127:8082/api/v2/eventos",
+          "protocol": "http",
+          "host": [
+            "34",
+            "231",
+            "120",
+            "127"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "v2",
+            "eventos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
