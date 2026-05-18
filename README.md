@@ -118,6 +118,32 @@ Plataforma web para eventos gastronómicos. El organizador crea el evento, regis
 
 ---
 
+## ¿Por qué usamos Feign Client?
+
+En este proyecto se utilizó OpenFeign para permitir la comunicación entre microservicios mediante llamadas HTTP REST de forma más ordenada, desacoplada y fácil de mantener.
+
+Cada microservicio posee su propia base de datos independiente, por lo que no pueden acceder directamente a tablas de otros servicios. Debido a esto, cuando un servicio necesita validar o consultar información externa, debe hacerlo mediante APIs REST usando Feign Client.
+
+Por ejemplo:
+
+- Evento-Service consulta a Usuario-Service para validar que el organizador exista.
+- Stand-Service consulta a Evento-Service para verificar que el evento esté disponible antes de registrar un stand.
+- Producto-Service consulta a Stand-Service para validar que el stand exista y esté activo.
+- Pedido-Service utiliza varios Feign Client porque necesita validar usuarios, eventos, productos y stock antes de confirmar una compra.
+- SubPedido-Service consulta información del pedido y del stand para dividir correctamente la compra.
+- Preparacion-Service y Notificacion-Service utilizan Feign para mantener sincronizados los estados y avisos del sistema.
+
+El uso de Feign permitió:
+
+- Mantener independencia entre microservicios.
+- Evitar compartir bases de datos entre servicios.
+- Reducir acoplamiento directo entre módulos.
+- Simplificar llamadas HTTP mediante interfaces Java.
+- Facilitar escalabilidad y mantenimiento del sistema.
+- Seguir una arquitectura distribuida real basada en microservicios.
+
+Además, Feign ayudó a representar correctamente las dependencias del negocio sin generar dependencias circulares entre servicios, especialmente en flujos críticos como Pedido ↔ SubPedido.
+
 ## Tabla de contratos
 
 | # | Origen | Destino | Método | Endpoint |
