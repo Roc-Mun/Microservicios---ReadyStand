@@ -1,5 +1,11 @@
 # ReadyStand | Arquitectura de Microservicios
 
+---
+
+HASTA 21-06-2026: Pruebas unitarias en los microservicios Usuario, Evento, SubPedido, Preparacion e Inventario.
+
+---
+
 Plataforma web para eventos gastronómicos. El organizador crea el evento, registra stands y publica menús. Los clientes navegan los stands y, una vez iniciado el evento, pueden realizar pedidos de múltiples stands en una sola compra. El sistema divide internamente el pedido por stand, gestiona la preparación y notifica al cliente cuando cada parte está lista para retiro presencial.
 
 En esta versión del proyecto se incorporaron pruebas unitarias y documentación Swagger en los microservicios principales trabajados para la entrega. Se aplicó el mismo procedimiento general de testing en los módulos Usuario, Evento, SubPedido, Preparación e Inventario, considerando pruebas por capas: modelo, servicio, repositorio y controlador.
