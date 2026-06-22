@@ -20,7 +20,7 @@ En esta versión del proyecto se incorporaron pruebas unitarias y documentación
 | Pago-Service         | Bastián   | [microservicio-pagos](https://github.com/Bastian0711/microservicio-pagos)               |
 | Notificacion-Service | Bastián   | [microservicio-notificacion](https://github.com/Bastian0711/microservicio-notificacion) |
 | Inventario-Service   | Bastián   | [microservicio-inventario](https://github.com/Bastian0711/microservicio-inventario)     |
-| API-Gateway / Eureka | Bastián   | [Api-Gateway](https://github.com/Bastian0711/Api-Gateway-)                              |
+| API-Gateway / Eureka | Bastián   | [Api-Gateway](https://github.com/Bastian0711/api-gateway)                              |
 
 ---
 
@@ -310,7 +310,7 @@ Eureka Server permite registrar y descubrir servicios dentro del ecosistema de m
 
 Repositorio:
 
-[Api-Gateway](https://github.com/Bastian0711/Api-Gateway-)
+[Api-Gateway](https://github.com/Bastian0711/api-gateway)
 
 Puertos principales:
 
