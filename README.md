@@ -205,7 +205,7 @@ El uso de Feign permitió:
 | 8 | Pedido / Orden | Inventario | GET | `/api/v3/inventario/producto/{id}` |
 | 9 | Pedido / Orden | Inventario | POST | `/api/v3/inventario/descontar` |
 | 10 | Pedido / Orden | Notificacion | POST | `/api/v3/notificaciones` |
-| 11 | Pago | Pedido / Orden | GET | `[POR CONFIRMAR]` |
+| 11 | Pago | Pedido / Orden | GET | `/api/v3/pagos` |
 | 12 | Pago | SubPedido | POST | `/api/v3/subpedidos/generar` |
 | 13 | SubPedido | Pedido / Orden | GET | `[POR CONFIRMAR]` |
 | 14 | SubPedido | Stand | GET | `/api/v3/stands/{id}` |
@@ -380,9 +380,9 @@ La pauta solicita al menos **80% de cobertura** en pruebas unitarias. En la sigu
 | Pedido / Orden | `[POR COMPLETAR]` | `[POR COMPLETAR]` |
 | SubPedido | Implementadas | `[POR COMPLETAR]` |
 | Preparacion | Implementadas | `[POR COMPLETAR]` |
-| Pago | `[POR COMPLETAR]` | `[POR COMPLETAR]` |
-| Notificacion | `[POR COMPLETAR]` | `[POR COMPLETAR]` |
-| Inventario | Implementadas | `[POR COMPLETAR]` |
+| Pago | Implementadas | Tests run: 16, Failures: 0, Errors: 0, Skipped: 0 |
+| Notificacion | Implementadas | Tests run: 16, Failures: 0, Errors: 0, Skipped: 0 |
+| Inventario | Implementadas | Tests run: 30, Failures: 0, Errors: 0, Skipped: 0 |
 
 ---
 
