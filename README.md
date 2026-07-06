@@ -207,7 +207,7 @@ El uso de Feign permitió:
 | 10 | Pedido / Orden | Notificacion | POST | `/api/v3/notificaciones` |
 | 11 | Pago | Pedido / Orden | GET | `/api/v3/pagos` |
 | 12 | Pago | SubPedido | POST | `/api/v3/subpedidos/generar` |
-| 13 | SubPedido | Pedido / Orden | GET | `[POR CONFIRMAR]` |
+| 13 | SubPedido | Pedido / Orden | GET | `/api/v3/subpedidos/{id}` |
 | 14 | SubPedido | Stand | GET | `/api/v3/stands/{id}` |
 | 15 | Preparacion | SubPedido | GET | `/api/v3/subpedidos/{id}` |
 | 16 | Preparacion | Notificacion | POST | `/api/v3/notificaciones` |
@@ -237,9 +237,9 @@ http://54.173.240.75:8080
 | Evento | `http://54.173.240.75:8080/api/v3/eventos` |
 | Stand | `http://54.173.240.75:8080/api/v3/stands` |
 | Producto | `http://54.173.240.75:8080/api/v3/productos` |
-| Pedido / Orden | `[POR CONFIRMAR: http://54.173.240.75:8080/api/v3/pedidos o /api/v3/ordenes]` |
+| Pedido / Orden | `http://54.173.240.75:8080/api/v3/orden` |
 | SubPedido | `http://54.173.240.75:8080/api/v3/subpedidos` |
-| Preparacion | `[POR CONFIRMAR]` |
+| Preparacion | `http://54.173.240.75:8080/api/v3/preparacion` |
 | Pago | `http://54.173.240.75:8080/api/v3/pagos` |
 | Notificacion | `http://54.173.240.75:8080/api/v3/notificaciones` |
 | Inventario | `http://54.173.240.75:8080/api/v3/inventario` |
@@ -343,9 +343,9 @@ En los controladores se utilizaron anotaciones como:
 | Evento | `http://34.231.120.127:8082/doc/swagger-ui.html` |
 | Stand | `http://34.231.120.127:8083/doc/swagger-ui.html` |
 | Producto | `http://34.231.120.127:8084/doc/swagger-ui.html` |
-| Pedido / Orden | `[POR COMPLETAR]` |
-| SubPedido | `[POR COMPLETAR]` |
-| Preparacion | `[POR COMPLETAR]` |
+| Pedido / Orden | `http://18.210.19.5:8085/doc/swagger-ui.html` |
+| SubPedido | `http://18.210.19.5:8086/doc/swagger-ui.html` |
+| Preparacion | `http://18.210.19.5:8088/doc/swagger-ui.html` |
 | Pago | `http://34.197.162.232:8087/doc/swagger-ui/index.html` |
 | Notificacion | `http://34.197.162.232:8089/doc/swagger-ui/index.html` |
 | Inventario | `http://34.197.162.232:8090/doc/swagger-ui/index.html` |
@@ -377,9 +377,9 @@ La pauta solicita al menos **80% de cobertura** en pruebas unitarias. En la sigu
 | Evento | Implementadas | Tests run: 16, Failures: 0, Errors: 0, Skipped: 0 |
 | Stand | Implementadas | Tests run: 19, Failures: 0, Errors: 0, Skipped: 0 |
 | Producto | Implementadas | Tests run: 21, Failures: 0, Errors: 0, Skipped: 0 |
-| Pedido / Orden | `[POR COMPLETAR]` | `[POR COMPLETAR]` |
-| SubPedido | Implementadas | `[POR COMPLETAR]` |
-| Preparacion | Implementadas | `[POR COMPLETAR]` |
+| Pedido / Orden | Implementadas | Tests run: 13, Failures: 0, Errors: 0, Skipped: 0 |
+| SubPedido | Implementadas | Tests run: 10, Failures: 0, Errors: 0, Skipped: 0 |
+| Preparacion | Implementadas | Tests run: 13, Failures: 0, Errors: 0, Skipped: 0 |
 | Pago | Implementadas | Tests run: 16, Failures: 0, Errors: 0, Skipped: 0 |
 | Notificacion | Implementadas | Tests run: 16, Failures: 0, Errors: 0, Skipped: 0 |
 | Inventario | Implementadas | Tests run: 30, Failures: 0, Errors: 0, Skipped: 0 |
@@ -557,6 +557,9 @@ http://54.173.240.75:8080/api/v3/productos
 http://54.173.240.75:8080/api/v3/pagos
 http://54.173.240.75:8080/api/v3/notificaciones
 http://54.173.240.75:8080/api/v3/inventario
+http://54.173.240.75:8080/api/v3/orden
+http://54.173.240.75:8080/api/v3/preparacion
+http://54.173.240.75:8080/api/v3/subpedido
 ```
 
 6. Probar Swagger de los microservicios documentados.
@@ -596,6 +599,9 @@ curl -i http://54.173.240.75:8080/api/v3/productos
 curl -i http://54.173.240.75:8080/api/v3/pagos
 curl -i http://54.173.240.75:8080/api/v3/notificaciones
 curl -i http://54.173.240.75:8080/api/v3/inventario
+curl -i http://54.173.240.75:8080/api/v3/orden
+curl -i http://54.173.240.75:8080/api/v3/preparacion
+curl -i http://54.173.240.75:8080/api/v3/subpedido
 ```
 
 ---
@@ -609,8 +615,6 @@ Los demás microservicios del sistema se integran bajo el mismo enfoque, usando 
 ---
 
 ## Notas finales
-
-* Las rutas marcadas como `[POR COMPLETAR]` o `[POR CONFIRMAR]` deben ser actualizadas cuando se confirme la ruta final del microservicio correspondiente.
 * La cobertura porcentual debe completarse con el reporte real obtenido en cada módulo si se utiliza herramienta de cobertura.
 * Los enlaces Swagger deben mantenerse actualizados según la IP pública y puerto activo de cada servicio.
 * El repositorio debe permanecer público y accesible para el docente y los integrantes del equipo.
