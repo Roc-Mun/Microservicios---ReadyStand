@@ -343,9 +343,9 @@ En los controladores se utilizaron anotaciones como:
 | Evento | `http://34.231.120.127:8082/doc/swagger-ui.html` |
 | Stand | `http://34.231.120.127:8083/doc/swagger-ui.html` |
 | Producto | `http://34.231.120.127:8084/doc/swagger-ui.html` |
-| Pedido / Orden | `[POR COMPLETAR]` |
-| SubPedido | `[POR COMPLETAR]` |
-| Preparacion | `[POR COMPLETAR]` |
+| Pedido / Orden | `http://19.210.19.5:8085/doc/swagger-ui.html` |
+| SubPedido | `http://19.210.19.5:8086/doc/swagger-ui.html` |
+| Preparacion | `http://19.210.19.5:8088/doc/swagger-ui.html` |
 | Pago | `http://34.197.162.232:8087/doc/swagger-ui/index.html` |
 | Notificacion | `http://34.197.162.232:8089/doc/swagger-ui/index.html` |
 | Inventario | `http://34.197.162.232:8090/doc/swagger-ui/index.html` |
@@ -377,9 +377,9 @@ La pauta solicita al menos **80% de cobertura** en pruebas unitarias. En la sigu
 | Evento | Implementadas | Tests run: 16, Failures: 0, Errors: 0, Skipped: 0 |
 | Stand | Implementadas | Tests run: 19, Failures: 0, Errors: 0, Skipped: 0 |
 | Producto | Implementadas | Tests run: 21, Failures: 0, Errors: 0, Skipped: 0 |
-| Pedido / Orden | `[POR COMPLETAR]` | `[POR COMPLETAR]` |
-| SubPedido | Implementadas | `[POR COMPLETAR]` |
-| Preparacion | Implementadas | `[POR COMPLETAR]` |
+| Pedido / Orden | Implementadas | Tests run: 13, Failures: 0, Errors: 0, Skipped: 0 |
+| SubPedido | Implementadas | Tests run: 10 , Failures: 0, Errors: 0, Skipped: 0 |
+| Preparacion | Implementadas | Tests run: 13, Failures: 0, Errors: 0, Skipped: 0 |
 | Pago | `[POR COMPLETAR]` | `[POR COMPLETAR]` |
 | Notificacion | `[POR COMPLETAR]` | `[POR COMPLETAR]` |
 | Inventario | Implementadas | `[POR COMPLETAR]` |
